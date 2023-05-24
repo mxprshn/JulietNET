@@ -62,6 +62,15 @@ namespace TestCaseSupport
             WriteLine(string.Format("{0:0.##}", byteHex));
         }
 
+        /* use this method to get a database connection for use in SQL
+         * Injection and other test cases that use a database.
+         */
+        public static SqlConnection GetDBConnection()
+        {
+            SqlConnection connection = new SqlConnection(connetionString);
+            return connection;
+        }
+
         /* The variables below are declared "readonly", so a tool doing whole
         program analysis should be able to identify that reads of these
         will always return their initialized values. */
