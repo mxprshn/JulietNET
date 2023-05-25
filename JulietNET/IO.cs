@@ -24,42 +24,34 @@ namespace TestCaseSupport
 
         public static void WriteString(string str)
         {
-            Console.WriteLine(str);
         }
 
         public static void WriteLine(string line)
         {
-            Console.WriteLine(line);
         }
 
         public static void WriteLine(int intNumber)
         {
-            WriteLine(string.Format("{0:0.##}", intNumber));
         }
 
         public static void WriteLine(long longNumber)
         {
-            WriteLine(string.Format("{0:0.##}", longNumber));
         }
 
         public static void WriteLine(double doubleNumber)
         {
-            WriteLine(string.Format("{0:0.##}", doubleNumber));
         }
 
         public static void WriteLine(float floatNumber)
         {
-            WriteLine(string.Format("{0:0.##}", floatNumber));
         }
 
         public static void WriteLine(short shortNumber)
         {
-            WriteLine(string.Format("{0:0.##}", shortNumber));
         }
 
         public static void WriteLine(byte byteHex)
         {
-            WriteLine(string.Format("{0:0.##}", byteHex));
         }
 
         /* use this method to get a database connection for use in SQL
